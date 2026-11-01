@@ -1,0 +1,10 @@
+Copyright (c) 2026 Christos-Athanasios Zervoudakis. All rights reserved.
+
+The source code and documentation in this repository are published for
+viewing and evaluation only. No permission is granted to copy, modify,
+redistribute or use them, in whole or in part, without the prior written
+permission of the author.
+
+Third-party material: the STAC search pattern in src/flood_etl.py follows
+the ESA EarthCODE BiDS 2025 tutorial (MIT License, Copyright (c) 2025
+EarthCODE), https://github.com/ESA-EarthCODE/bids2025-tutorial.

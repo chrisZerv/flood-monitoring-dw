@@ -1,0 +1,21 @@
+# Local credentials — never commit
+db_config.py
+.env
+
+# Runtime output of the ETL
+src/checkpoints/
+src/logs/
+*.log
+
+# Data and binaries that stay local
+*.pbix
+*.sql.gz
+data/
+dumps/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/

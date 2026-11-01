@@ -1,0 +1,23 @@
+# Flood Monitoring Data Warehouse — Python dependencies
+# Install:  pip install -r requirements.txt
+#
+# Versions are lower bounds — the project was tested in a conda environment
+# with Python 3.11.
+
+# --- Data source access ---
+pystac-client>=0.7          # STAC API client (GFM catalog)
+requests>=2.31              # Open-Meteo REST calls
+
+# --- Raster / geospatial processing ---
+rasterio>=1.3               # open & mask the GFM GeoTIFFs
+shapely>=2.0                # region geometries (WKT, bbox, masking)
+pyproj>=3.5                 # CRS transforms (WGS84 -> Equi7 grid)
+
+# --- Data & database ---
+pandas>=2.0                 # DataFrames in the ETL & clustering
+numpy>=1.24                 # numerics (pixel arrays)
+SQLAlchemy>=2.0             # connection & queries to MySQL
+PyMySQL>=1.1                # MySQL driver for SQLAlchemy
+
+# --- Machine learning (clustering.py) ---
+scikit-learn>=1.3           # K-Means, StandardScaler, silhouette_score
